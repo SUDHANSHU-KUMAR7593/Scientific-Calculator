@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphic Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="calculator-title">Scientific Calculator</h1>
+<div class="calculator-tagline">Calculate. Analyze. Conquer.</div>
+
+
+  <div class="container">
+    <div class="calculator">
+      <input type="text" id="display" readonly placeholder="0">
+      <div class="buttons">
+        <button onclick="clearDisplay()" class="highlight">C</button>
+        <button onclick="backspace()">⌫</button>
+        <button onclick="insert('(')">(</button>
+        <button onclick="insert(')')">)</button>
+
+        <button onclick="insert('sin(')">sin</button>
+        <button onclick="insert('cos(')">cos</button>
+        <button onclick="insert('tan(')">tan</button>
+        <button onclick="insert('π')">π</button>
+
+        <button onclick="insert('log(')">log</button>
+        <button onclick="insert('ln(')">ln</button>
+        <button onclick="insert('√(')">√</button>
+        <button onclick="insert('^')">xʸ</button>
+
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button onclick="insert('/')">÷</button>
+
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button onclick="insert('*')">×</button>
+
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button onclick="insert('-')">−</button>
+
+        <button onclick="insert('0')">0</button>
+        <button onclick="insert('.')">.</button>
+        <button onclick="calculate()" class="equal">=</button>
+        <button onclick="insert('+')">+</button>
+
+        <button onclick="insert('!')">x!</button>
+        <button onclick="insert('e')">e</button>
+        <button onclick="degRadToggle()" id="degRadBtn">DEG</button>
+        <button onclick="insert('%')">%</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-credit">Made by Sudhanshu Kumar</div>
+  <script src="script.js"></script>
+</body>
+</html>
